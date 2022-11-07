@@ -15,7 +15,7 @@ def home():
 def user(user_name, user_id):
     return f'username: {user_name}\n userid: {user_id} !'
 
-@app.route('/api',methods=['POST'])
+@app.route('/post',methods=['POST'])
 def post():
     id = request.form['id']
     pw = request.form['pw']
